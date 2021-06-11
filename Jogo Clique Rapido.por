@@ -7,8 +7,8 @@ programa
 	inclua biblioteca Util
 
 	logico fim_de_jogo = falso //O fim do jogo acontece quando: O jogador ganha, o tempo termina, ou a munição acaba
-	inteiro tempo_restante = 40
-	inteiro municao = 30
+	inteiro tempo_restante = 20
+	inteiro municao = 15
 
 	inteiro TAMANHO = 600
 	inteiro COR_CINZA = 0
@@ -58,7 +58,7 @@ programa
 
 			//aqui precisamos alterar o valor da variável fim_de_jogo
 			//O fim do jogo acontece quando: O jogador ganha, o tempo termina, ou a munição acaba
-			fim_de_jogo = municao == 0
+			fim_de_jogo = municao == 0 ou  tempo_restante == 0 ou pontos == 10
 		}
 		enquanto( nao fim_de_jogo )
 
@@ -201,7 +201,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 332; 
+ * @POSICAO-CURSOR = 1863; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
